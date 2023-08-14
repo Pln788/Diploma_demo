@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="802.0" prefWidth="1169.0" style="-fx-background-color: #7ae0f4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx77.Controller">
+   <children>
+      <GridPane fx:id="gridSpectrum" layoutX="957.0" layoutY="561.0" prefHeight="157.0" prefWidth="177.0" style="-fx-background-color: #6e2896; visibility: 20;" AnchorPane.rightAnchor="94.4">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="Label1" textFill="TRANSPARENT" />
+            <Label fx:id="Label2" textFill="TRANSPARENT" GridPane.columnIndex="1" />
+            <Label fx:id="Label3" textFill="TRANSPARENT" GridPane.columnIndex="2" />
+            <Label fx:id="Label4" textFill="TRANSPARENT" GridPane.columnIndex="3" />
+            <Label fx:id="Label5" textFill="TRANSPARENT" GridPane.columnIndex="4" />
+            <Label fx:id="Label6" textFill="TRANSPARENT" GridPane.columnIndex="5" />
+            <Label fx:id="Label7" textFill="TRANSPARENT" GridPane.columnIndex="6" />
+            <Label fx:id="Label8" textFill="TRANSPARENT" GridPane.columnIndex="7" />
+            <Label fx:id="Label9" textFill="TRANSPARENT" GridPane.columnIndex="8" />
+            <Label fx:id="Label10" textFill="TRANSPARENT" GridPane.columnIndex="9" />
+            <Label fx:id="Label11" textFill="TRANSPARENT" GridPane.rowIndex="1" />
+            <Label fx:id="Label12" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="Label13" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="Label14" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="Label15" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="Label16" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="Label17" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Label fx:id="Label18" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Label fx:id="Label19" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Label fx:id="Label20" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Label fx:id="Label21" textFill="TRANSPARENT" GridPane.rowIndex="2" />
+            <Label fx:id="Label22" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="Label23" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="Label24" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="Label26" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label fx:id="Label25" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="Label27" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label fx:id="Label28" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label fx:id="Label29" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Label fx:id="Label30" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Label fx:id="Label32" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="Label31" textFill="TRANSPARENT" GridPane.rowIndex="3" />
+            <Label fx:id="Label33" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="Label34" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="Label35" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="Label36" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label fx:id="Label37" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label fx:id="Label38" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label fx:id="Label39" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Label fx:id="Label40" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Label fx:id="Label41" textFill="TRANSPARENT" GridPane.rowIndex="4" />
+            <Label fx:id="Label42" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="Label43" textFill="#00000004" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="Label44" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="Label45" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="Label46" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label fx:id="Label47" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label fx:id="Label48" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Label fx:id="Label49" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Label fx:id="Label50" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Label fx:id="Label51" textFill="TRANSPARENT" GridPane.rowIndex="5" />
+            <Label fx:id="Label52" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="Label53" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="Label54" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="Label55" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="Label56" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label fx:id="Label57" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label fx:id="Label58" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Label fx:id="Label59" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Label fx:id="Label60" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Label fx:id="Label61" textFill="TRANSPARENT" GridPane.rowIndex="6" />
+            <Label fx:id="Label62" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="Label63" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="Label64" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="Label65" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="Label66" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="Label67" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label fx:id="Label68" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Label fx:id="Label69" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Label fx:id="Label70" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Label fx:id="Label71" textFill="TRANSPARENT" GridPane.rowIndex="7" />
+            <Label fx:id="Label72" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="Label73" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="Label74" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label fx:id="Label75" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label fx:id="Label76" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label fx:id="Label77" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label fx:id="Label78" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Label fx:id="Label79" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Label fx:id="Label80" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Label fx:id="Label81" textFill="TRANSPARENT" GridPane.rowIndex="8" />
+            <Label fx:id="Label82" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="Label83" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label fx:id="Label84" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label fx:id="Label85" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Label fx:id="Label86" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Label fx:id="Label87" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Label fx:id="Label88" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Label fx:id="Label89" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Label fx:id="Label90" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Label fx:id="Label91" textFill="TRANSPARENT" GridPane.rowIndex="9" />
+            <Label fx:id="Label92" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="Label93" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="Label94" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Label fx:id="Label95" textFill="#00000002" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Label fx:id="Label96" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Label fx:id="Label97" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Label fx:id="Label98" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Label fx:id="Label99" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Label fx:id="Label100" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <TextField layoutX="957.0" layoutY="731.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="221.0" fx:id="xStart1" />
+      <LineChart fx:id="chart" layoutX="22.0" layoutY="104.0" mouseTransparent="true" opacity="0.85" prefHeight="462.0" prefWidth="580.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 15;" title="Raman spectrum" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="299.6" AnchorPane.topAnchor="104.0">
+        <xAxis>
+          <NumberAxis label="Рамановский сдвиг,  (см-1)" side="BOTTOM" tickLabelFill="#6e2896" fx:id="xAxis">
+               <tickLabelFont>
+                  <Font name="Times New Roman" size="10.0" />
+               </tickLabelFont></NumberAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="Count" label="Интенсивность, отн. ед. " side="LEFT" tickLabelFill="#6e2896">
+               <tickLabelFont>
+                  <Font name="Times New Roman" size="10.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </LineChart>
+      <MenuBar prefHeight="26.0" prefWidth="901.0" style="-fx-background-color: #E0FFFF;" useSystemMenuBar="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newMethod" text="Создать">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  
+                  <MenuItem mnemonicParsing="false" text="Сохранить">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Сохранить как...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Закрыть" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Редактировать">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Отменить изменения">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Вернуть изменения">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Y" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Вырезать">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Копировать">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Вставить">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Удалить">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="DELETE" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Обработка спектра">
+              <items>
+                <MenuItem fx:id="buttonBL" mnemonicParsing="false" onAction="#createBaseLine" text="Удаление базовой линии">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="smoothing" mnemonicParsing="false" onAction="#doSmoothing" text="Удаление шумовой составляющей">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem fx:id="AllCharts" mnemonicParsing="false" onAction="#viewSpectr" text="Общий просмотр спектра">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="U" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Тут нужна только" />
+                  <MenuItem mnemonicParsing="false" text="Мне" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="numberOfChart" layoutX="192.0" layoutY="763.0" onAction="#chooseNumberOfChart" prefHeight="26.0" prefWidth="39.0" AnchorPane.bottomAnchor="35.60000000000002" />
+      <Label fx:id="ENC" layoutX="14.0" layoutY="594.0" prefHeight="20.0" prefWidth="166.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text=" Введите номер графика:" textFill="#6e2896" AnchorPane.bottomAnchor="37.39999999999998">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EN" layoutX="254.0" layoutY="730.0" prefHeight="20.0" prefWidth="257.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text=" Введите диапазон значений по оси Х: " textFill="#6e2896" AnchorPane.bottomAnchor="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="from" layoutX="526.0" layoutY="730.0" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text="     От: " textAlignment="CENTER" textFill="#6e2896" AnchorPane.bottomAnchor="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="before" layoutX="655.0" layoutY="730.0" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text="     До: " textAlignment="CENTER" textFill="#6e2896" AnchorPane.bottomAnchor="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="596.0" layoutY="726.0" prefHeight="26.0" prefWidth="52.0" text="0" AnchorPane.bottomAnchor="49.60000000000002" fx:id="xStart" />
+      <TextField layoutX="721.0" layoutY="726.0" onAction="#chooseNumberOfChart" prefHeight="26.0" prefWidth="52.0" text="0" AnchorPane.bottomAnchor="49.60000000000002" fx:id="xEnd" />
+      <Button fx:id="card" layoutX="954.0" layoutY="774.0" mnemonicParsing="false" onAction="#doCard" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #E0FFFF; -fx-border-radius: 16;" text="Расчет карты интенсивности" textFill="#6e2896" AnchorPane.rightAnchor="91.59999999999988" />
+      <AnchorPane layoutX="22.0" layoutY="47.0" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #6e2896; -fx-background-radius: 5;" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <Label fx:id="doLanguage" layoutX="4.0" layoutY="3.0" onMouseClicked="#doTranslate" prefHeight="18.0" prefWidth="110.0" style="-fx-background-color: #F0FFF0; -fx-background-radius: 5;" text="        Rus/Eng" textAlignment="CENTER" textFill="#6e2896" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="1020.0" layoutY="731.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="157.0" fx:id="xEnd1" />
+      <TextField fx:id="maxCard" layoutX="1083.0" layoutY="731.0" prefHeight="26.0" prefWidth="52.0" text="max" AnchorPane.rightAnchor="94.0" />
+      <GridPane fx:id="gridSpectrum1" layoutX="956.0" layoutY="299.0" prefHeight="157.0" prefWidth="177.0" style="-fx-background-color: #6e2896; visibility: 20;" AnchorPane.rightAnchor="95.4">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="Label011" textFill="TRANSPARENT" />
+            <Label fx:id="Label021" textFill="TRANSPARENT" GridPane.columnIndex="1" />
+            <Label fx:id="Label031" textFill="TRANSPARENT" GridPane.columnIndex="2" />
+            <Label fx:id="Label041" textFill="TRANSPARENT" GridPane.columnIndex="3" />
+            <Label fx:id="Label051" textFill="TRANSPARENT" GridPane.columnIndex="4" />
+            <Label fx:id="Label061" textFill="TRANSPARENT" GridPane.columnIndex="5" />
+            <Label fx:id="Label071" textFill="TRANSPARENT" GridPane.columnIndex="6" />
+            <Label fx:id="Label081" textFill="TRANSPARENT" GridPane.columnIndex="7" />
+            <Label fx:id="Label091" textFill="TRANSPARENT" GridPane.columnIndex="8" />
+            <Label fx:id="Label101" textFill="TRANSPARENT" GridPane.columnIndex="9" />
+            <Label fx:id="Label111" textFill="TRANSPARENT" GridPane.rowIndex="1" />
+            <Label fx:id="Label121" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="Label131" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="Label141" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="Label151" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="Label161" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="Label171" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Label fx:id="Label181" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Label fx:id="Label191" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Label fx:id="Label201" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Label fx:id="Label211" textFill="TRANSPARENT" GridPane.rowIndex="2" />
+            <Label fx:id="Label221" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="Label231" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="Label241" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="Label261" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label fx:id="Label251" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="Label271" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label fx:id="Label281" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label fx:id="Label291" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Label fx:id="Label301" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Label fx:id="Label321" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="Label311" textFill="TRANSPARENT" GridPane.rowIndex="3" />
+            <Label fx:id="Label331" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="Label341" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="Label351" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="Label361" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label fx:id="Label371" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label fx:id="Label381" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label fx:id="Label391" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Label fx:id="Label401" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Label fx:id="Label411" textFill="TRANSPARENT" GridPane.rowIndex="4" />
+            <Label fx:id="Label421" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="Label431" textFill="#00000004" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="Label441" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="Label451" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="Label461" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label fx:id="Label471" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label fx:id="Label481" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Label fx:id="Label491" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Label fx:id="Label501" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Label fx:id="Label511" textFill="TRANSPARENT" GridPane.rowIndex="5" />
+            <Label fx:id="Label521" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="Label531" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="Label541" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="Label551" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="Label561" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label fx:id="Label571" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label fx:id="Label581" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Label fx:id="Label591" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Label fx:id="Label601" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Label fx:id="Label611" textFill="TRANSPARENT" GridPane.rowIndex="6" />
+            <Label fx:id="Label621" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="Label631" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="Label641" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="Label651" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="Label661" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="Label671" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label fx:id="Label681" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Label fx:id="Label691" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Label fx:id="Label701" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Label fx:id="Label711" textFill="TRANSPARENT" GridPane.rowIndex="7" />
+            <Label fx:id="Label721" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="Label731" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="Label741" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label fx:id="Label751" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label fx:id="Label761" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label fx:id="Label771" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label fx:id="Label781" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Label fx:id="Label791" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Label fx:id="Label801" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Label fx:id="Label811" textFill="TRANSPARENT" GridPane.rowIndex="8" />
+            <Label fx:id="Label821" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="Label831" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label fx:id="Label841" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label fx:id="Label851" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Label fx:id="Label861" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Label fx:id="Label871" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Label fx:id="Label881" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Label fx:id="Label891" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Label fx:id="Label901" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Label fx:id="Label911" textFill="TRANSPARENT" GridPane.rowIndex="9" />
+            <Label fx:id="Label921" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="Label931" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="Label941" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Label fx:id="Label951" textFill="#00000002" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Label fx:id="Label961" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Label fx:id="Label971" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Label fx:id="Label981" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Label fx:id="Label991" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Label fx:id="Label1001" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <TextField layoutX="956.0" layoutY="470.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="221.0" fx:id="xStart11" />
+      <GridPane fx:id="gridSpectrum11" layoutX="956.0" layoutY="38.0" prefHeight="157.0" prefWidth="177.0" style="-fx-background-color: #6e2896; visibility: 20;" AnchorPane.rightAnchor="95.40000000000012">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="Label012" textFill="TRANSPARENT" />
+            <Label fx:id="Label022" textFill="TRANSPARENT" GridPane.columnIndex="1" />
+            <Label fx:id="Label032" textFill="TRANSPARENT" GridPane.columnIndex="2" />
+            <Label fx:id="Label042" textFill="TRANSPARENT" GridPane.columnIndex="3" />
+            <Label fx:id="Label052" textFill="TRANSPARENT" GridPane.columnIndex="4" />
+            <Label fx:id="Label062" textFill="TRANSPARENT" GridPane.columnIndex="5" />
+            <Label fx:id="Label072" textFill="TRANSPARENT" GridPane.columnIndex="6" />
+            <Label fx:id="Label082" textFill="TRANSPARENT" GridPane.columnIndex="7" />
+            <Label fx:id="Label092" textFill="TRANSPARENT" GridPane.columnIndex="8" />
+            <Label fx:id="Label102" textFill="TRANSPARENT" GridPane.columnIndex="9" />
+            <Label fx:id="Label112" textFill="TRANSPARENT" GridPane.rowIndex="1" />
+            <Label fx:id="Label122" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="Label132" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="Label142" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="Label152" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label fx:id="Label162" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label fx:id="Label172" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Label fx:id="Label182" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Label fx:id="Label192" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Label fx:id="Label202" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Label fx:id="Label212" textFill="TRANSPARENT" GridPane.rowIndex="2" />
+            <Label fx:id="Label222" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="Label232" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="Label242" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="Label252" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label fx:id="Label262" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label fx:id="Label272" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label fx:id="Label282" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label fx:id="Label292" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Label fx:id="Label302" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <Label fx:id="Label312" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="Label322" textFill="TRANSPARENT" GridPane.rowIndex="3" />
+            <Label fx:id="Label332" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="Label342" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="Label352" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label fx:id="Label362" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label fx:id="Label372" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label fx:id="Label382" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label fx:id="Label392" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <Label fx:id="Label402" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <Label fx:id="Label412" textFill="TRANSPARENT" GridPane.rowIndex="4" />
+            <Label fx:id="Label422" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="Label432" textFill="#00000004" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="Label442" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="Label452" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Label fx:id="Label462" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Label fx:id="Label472" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Label fx:id="Label482" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Label fx:id="Label492" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <Label fx:id="Label502" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <Label fx:id="Label512" textFill="TRANSPARENT" GridPane.rowIndex="5" />
+            <Label fx:id="Label522" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="Label532" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label fx:id="Label542" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="Label552" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Label fx:id="Label562" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Label fx:id="Label572" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Label fx:id="Label582" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Label fx:id="Label592" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <Label fx:id="Label602" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <Label fx:id="Label612" textFill="TRANSPARENT" GridPane.rowIndex="6" />
+            <Label fx:id="Label622" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="Label632" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="Label642" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="Label652" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Label fx:id="Label662" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Label fx:id="Label672" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label fx:id="Label682" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Label fx:id="Label692" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <Label fx:id="Label702" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <Label fx:id="Label712" textFill="TRANSPARENT" GridPane.rowIndex="7" />
+            <Label fx:id="Label722" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="Label732" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="Label742" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label fx:id="Label752" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Label fx:id="Label762" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Label fx:id="Label772" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Label fx:id="Label782" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <Label fx:id="Label792" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <Label fx:id="Label802" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <Label fx:id="Label812" textFill="TRANSPARENT" GridPane.rowIndex="8" />
+            <Label fx:id="Label822" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="Label832" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label fx:id="Label842" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label fx:id="Label852" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Label fx:id="Label862" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Label fx:id="Label872" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Label fx:id="Label882" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <Label fx:id="Label892" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <Label fx:id="Label902" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <Label fx:id="Label912" textFill="TRANSPARENT" GridPane.rowIndex="9" />
+            <Label fx:id="Label922" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="Label932" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="Label942" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Label fx:id="Label952" textFill="#00000002" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Label fx:id="Label962" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Label fx:id="Label972" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <Label fx:id="Label982" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <Label fx:id="Label992" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <Label fx:id="Label1002" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <TextField layoutX="956.0" layoutY="208.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="221.0" fx:id="xStart2" />
+      <Button fx:id="card1" layoutX="951.0" layoutY="516.0" mnemonicParsing="false" onAction="#doCard1" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #E0FFFF; -fx-border-radius: 16;" text="Расчет карты интенсивности" textFill="#6e2896" AnchorPane.rightAnchor="91.6" />
+      <TextField layoutX="1020.0" layoutY="470.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="157.0" fx:id="xEnd11" />
+      <TextField fx:id="maxCard1" layoutX="1080.0" layoutY="470.0" prefHeight="26.0" prefWidth="52.0" text="max" AnchorPane.rightAnchor="94.0" />
+      <Button fx:id="card2" layoutX="954.0" layoutY="253.0" mnemonicParsing="false" onAction="#doCard2" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: #E0FFFF; -fx-border-radius: 16;" text="Расчет карты интенсивности" textFill="#6e2896" AnchorPane.rightAnchor="91.59999999999988" />
+      <TextField layoutX="1020.0" layoutY="208.0" prefHeight="26.0" prefWidth="52.0" promptText="0" AnchorPane.rightAnchor="157.0" fx:id="xEnd2" />
+      <TextField fx:id="maxCard2" layoutX="1083.0" layoutY="208.0" prefHeight="26.0" prefWidth="52.0" text="max" AnchorPane.rightAnchor="94.0" />
+      <AnchorPane layoutX="1164.0" layoutY="34.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #0000FF;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="60.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #4169E1;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="190.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #D8BFD8;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="86.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #058c7e;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="112.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #00CED1;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="216.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #E6E6FA;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="138.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #40E0D0;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="164.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #7FFFD4;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="240.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #AFEEEE;" AnchorPane.rightAnchor="38.6" />
+      <AnchorPane layoutX="1164.0" layoutY="266.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #E0FFFF;" AnchorPane.rightAnchor="38.6" />
+      <Label fx:id="EN1" layoutX="254.0" layoutY="760.0" prefHeight="20.0" prefWidth="257.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text=" Введите диапазон значений по оси Y: " textFill="#6e2896" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="from1" layoutX="526.0" layoutY="760.0" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text="     От: " textAlignment="CENTER" textFill="#6e2896" AnchorPane.bottomAnchor="22.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="before1" layoutX="655.0" layoutY="763.0" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text="     До: " textAlignment="CENTER" textFill="#6e2896" AnchorPane.bottomAnchor="19.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="yStart" layoutX="596.0" layoutY="756.0" prefHeight="26.0" prefWidth="52.0" text="0" AnchorPane.bottomAnchor="19.600000000000023" />
+      <TextField fx:id="yEnd" layoutX="721.0" layoutY="756.0" onAction="#chooseNumberOfChart" prefHeight="26.0" prefWidth="52.0" promptText="0" text="0" AnchorPane.bottomAnchor="19.600000000000023" />
+      <TextField fx:id="removeChart" layoutX="773.0" layoutY="63.0" onAction="#removeChart" prefHeight="26.0" prefWidth="39.0" AnchorPane.rightAnchor="356.8" AnchorPane.topAnchor="63.0" />
+      <Label fx:id="ENC1" layoutX="601.0" layoutY="66.0" prefHeight="20.0" prefWidth="166.0" style="-fx-background-color: #E0FFFF; -fx-background-radius: 5;" text="  Удалить график номер:" textFill="#6e2896" AnchorPane.rightAnchor="401.6" AnchorPane.topAnchor="66.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
